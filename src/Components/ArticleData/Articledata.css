@@ -1,0 +1,40 @@
+.SortContainer {
+  display: flex;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  gap: 15px;
+  margin-bottom:20px;
+}
+#upvotedButton {
+  background-color: #199e43;
+  border: none;
+  width: 100px;
+  cursor: pointer;
+  filter: drop-shadow(0 0.5rem 0.8rem rgb(105, 104, 104));
+}
+#recentButton {
+  background-color: #199e43;
+  border: none;
+  width: 100px;
+  cursor: pointer;
+  filter: drop-shadow(0 0.5rem 1rem rgb(105, 104, 104));
+}
+@media (max-width: 680px) {
+  #sortHeading {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 590px) {
+  #sortHeading {
+    font-size: 18px;
+  }
+  #upvotedButton {
+    width: 80px;
+  }
+  #recentButton {
+    width: 80px;
+  }
+}
